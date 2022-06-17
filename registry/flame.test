@@ -2,7 +2,9 @@ contact=contact@blue-fire.xyz
 contact=lukas@blue-fire.xyz
 fetch=git clone https://github.com/flame-engine/flame.git tests
 fetch=git -C tests checkout 1dc313f3016c21f188375b134dd65346c0373856
-update=packages/flame
+fetch=dart pub global activate melos
 # Flame is a monorepo with many packages, this will only perform the core tests.
-test=cd packages/flame && flutter analyze --no-fatal-infos
-test=cd packages/flame && flutter test
+update=packages/flame
+test=melos bootstrap
+test=flutter analyze --no-fatal-infos
+#test=melos test
