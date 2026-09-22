@@ -13,7 +13,7 @@ contact=contact@blue-fire.xyz
 contact=lukas@blue-fire.xyz
 
 fetch=git clone https://github.com/flame-engine/flame.git tests
-fetch=git -C tests checkout 74721f093645603001b205ca9c36c94c5552a1fd
+fetch=git -C tests checkout c35f9d803e9297561f53c4bad3f54182b644e0cf
 
 update=.
 
